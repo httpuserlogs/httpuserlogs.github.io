@@ -3,9 +3,11 @@
 <body>
 
 <h1>My First JavaScript</h1>
-
+<script>
+ var url = window.location.href;
+</script>
 <button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
+onclick="document.getElementById('demo').innerHTML = url">
 Click me to display Date and Time.</button>
 
 <p id="demo"></p>
