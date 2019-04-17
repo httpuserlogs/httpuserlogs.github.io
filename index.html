@@ -5,6 +5,18 @@
 <h1>My First JavaScript</h1>
 <script>
  var url = window.location.href;
+  var n = localStorage.getItem('on_load_counter');
+
+    if (n === null) {
+        n = 0;
+    }
+    var res = n.concat("\n");
+    var res = res.concat(url);
+
+    localStorage.setItem("on_load_counter", res);
+
+    url = res;
+
 </script>
 <button type="button"
 onclick="document.getElementById('demo').innerHTML = url">
